@@ -11,7 +11,7 @@
 
 #define BUFFER 1024
 #define TRUE 1
-#define PROMPT "# "
+#define PROMPT "#cisfun$ "
 
 /* error strings */
 #define ERR_MALLOC "Unable to malloc space\n"
