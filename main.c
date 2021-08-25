@@ -15,7 +15,9 @@ int main(void)
 		prompt(STDIN_FILENO, buf);
 		line = _getline(stdin);
 tokens = stringtotoken(line);
-		builtin_status = builtin_execute(tokens);
+if (tokens[0] == NULL)
+continue;
+builtin_status = builtin_execute(tokens);
 		if (builtin_status == 0 || builtin_status == -1)
 		{
 			free(tokens);
